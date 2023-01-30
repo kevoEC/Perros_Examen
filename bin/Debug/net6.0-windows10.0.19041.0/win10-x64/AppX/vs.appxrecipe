@@ -29,13 +29,13 @@
     <AppXManifest Include="C:\Users\rosco\OneDrive\Escritorio\Programacion4\KevinRosero_ExamenFinal\KevinRosero_ExamenFinal\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-01-30T13:31:38.776</Modified>
+      <Modified>2023-01-30T13:54:26.955</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\rosco\OneDrive\Escritorio\Programacion4\KevinRosero_ExamenFinal\KevinRosero_ExamenFinal\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-01-30T13:25:01.110</Modified>
+      <Modified>2023-01-30T13:54:26.593</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\rosco\OneDrive\Escritorio\Programacion4\KevinRosero_ExamenFinal\KevinRosero_ExamenFinal\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\KevinRosero_ExamenFinal.runtimeconfig.json">
       <PackagePath>KevinRosero_ExamenFinal.runtimeconfig.json</PackagePath>
@@ -43,11 +43,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\rosco\OneDrive\Escritorio\Programacion4\KevinRosero_ExamenFinal\KevinRosero_ExamenFinal\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\KevinRosero_ExamenFinal.dll">
       <PackagePath>KevinRosero_ExamenFinal.dll</PackagePath>
-      <Modified>2023-01-30T13:31:37.146</Modified>
+      <Modified>2023-01-30T13:54:24.797</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\rosco\OneDrive\Escritorio\Programacion4\KevinRosero_ExamenFinal\KevinRosero_ExamenFinal\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>KevinRosero_ExamenFinal.exe</PackagePath>
-      <Modified>2023-01-30T13:31:37.158</Modified>
+      <Modified>2023-01-30T13:54:24.821</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\rosco\.nuget\packages\microsoft.netcore.app.runtime.win-x64\6.0.13\runtimes\win-x64\lib\net6.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -1091,7 +1091,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\rosco\OneDrive\Escritorio\Programacion4\KevinRosero_ExamenFinal\KevinRosero_ExamenFinal\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\KevinRosero_ExamenFinal.deps.json">
       <PackagePath>KevinRosero_ExamenFinal.deps.json</PackagePath>
-      <Modified>2023-01-30T13:31:38.626</Modified>
+      <Modified>2023-01-30T13:54:26.809</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\rosco\.nuget\packages\microsoft.maui.controls.ref.win\6.0.548\ref\net6.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>
