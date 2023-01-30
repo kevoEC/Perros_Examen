@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="KevinRosero_ExamenFinal.Views.PerroListPage"
+             xmlns:models="clr-namespace:KevinRosero_ExamenFinal.Models"
+             Title="Lista de Perritos (Kevin Rosero)">
+    <Grid RowDefinitions="*,Auto">
+        <CollectionView x:Name="perrosListKR"
+                        ItemsSource="{Binding Items}"
+                        SelectionMode="Single"
+                        SelectionChanged="CollectionView_SelectionChanged">
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="models:Perro">
+                    <VerticalStackLayout>
+                        <BoxView Color="White" HeightRequest="20"/>
+                        <Grid ColumnDefinitions="*,2*" RowDefinitions="*,*,*" >
+                            <Label Grid.Column="0" Grid.Row="0" HorizontalOptions="Start" Text="{Binding Id_KevinR}" />
+                            <Label Grid.Column="1" Grid.Row="0" FontAttributes="Bold" FontSize="18" Text="{Binding Name_KevinR}" />
+                            <Label Grid.Column="0" Grid.Row="1" FontAttributes="Bold" Text="Raza:"/>
+                            <Label Grid.Column="1" Grid.Row="1" Text="{Binding Raza_KevinR}" />
+                            <Label Grid.Column="0" Grid.Row="1" FontAttributes="Bold" Text="Edad:"/>
+                            <Label Grid.Column="1" Grid.Row="1" Text="{Binding Edad_KevinR}" />
+                            <Label Grid.Column="0" Grid.Row="2" FontAttributes="Bold" Text="¿Tiene todas sus vacunas?"/>
+                            <Label Grid.Column="1" Grid.Row="2" Text="{Binding Esta_Vacunado}" />
+                        </Grid>
+                        <BoxView Color="White" HeightRequest="20"/>
+                        <BoxView Color="Purple" HeightRequest="1"/>
+                    </VerticalStackLayout>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+        <Grid Grid.Row="1" ColumnDefinitions="*,*" BackgroundColor="#f2f2f4">
+            <Button Grid.Row="0" Grid.Column="1" 
+                    Text="Añadir nuevo registro" 
+                    Clicked="OnItemAdded" 
+                    FontAttributes="Bold"
+                    Margin="20"
+                    CornerRadius="20"/>
+            <Button Grid.Row="0" Grid.Column="0" 
+                    BackgroundColor="White"
+                    TextColor="#512bd4"
+                    BorderColor="#512bd4"
+                    BorderWidth="1"
+                    Text="Actualizar" 
+                    FontAttributes="Bold"
+                    Clicked="ActualizarDatos" 
+                    Margin="20"
+                    CornerRadius="20"/>
+        </Grid>
+    </Grid>
+</ContentPage>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="KevinRosero_ExamenFinal.Views.PerroItemPage"
+             xmlns:models="clr-namespace:KevinRosero_ExamenFinal.Models"
+             xmlns:local="clr-namespace:KevinRosero_ExamenFinal.ViewModels"
+             xmlns:sys="clr-namespace:System;assembly=mscorlib"
+             Title="Ingresa un nuevo Perro (Kevin Rosero)">
+    <ScrollView>
+        <VerticalStackLayout Padding="20"
+                             Spacing="10"
+                            VerticalOptions="StartAndExpand">
+            <Label Text="Nombre de tu mascota" />
+            <Entry x:Name="name" Text="{Binding Name_KevinR}" />
+            <Label Text="Raza de tu mascota" />
+            <Entry x:Name="raza" Text="{Binding Raza_KevinR}" />
+            <Label Text="Edad de tu mascota" />
+            <Entry x:Name="edad" Text="{Binding Raza_KevinR}" />
+            <Label Text="¿Tiene todas sus vacunas?" />
+            <CheckBox x:Name="check"     
+                        CheckedChanged="OnCheckBoxCheckedChanged" />
+            <Label Text="Fecha actual: " />
+            <!--<Label x:Name="dateNow" FontSize="10" />-->
+            <!--<Label Text="{Binding Source={x:Static sys:DateTime.Now}, StringFormat='{0:MMMM dd, yyyy}'}" />-->
+            <Label x:Name="fuente"
+                   Text="{Binding DateTime, StringFormat='{0:dd/MM/yyyy HH:mm:ss}'}">
+                <Label.BindingContext>
+                    <local:DateViewModel/>
+                </Label.BindingContext>
+            </Label>
+
+            <Button Text="Guardar"
+                    Clicked="OnSaveClicked" />
+            <Button Text="Borrar"
+                    Clicked="DeletedClicked" />
+            <Button Text="Cancelar"
+                    Clicked="OnCancelClicked" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
