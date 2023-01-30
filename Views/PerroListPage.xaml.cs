@@ -31,7 +31,7 @@ public partial class PerroListPage : ContentPage
 
     private static List<Perro> UpdateList()
     {
-        List<Perro> burger = App.PerroRepoKR.GetAllPerros();
-        return burger;
+        List<Perro> perros = App.PerroRepoKR.GetAllPerros();
+        return perros;
     }
 }
